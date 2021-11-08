@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  paddin: 0;
+  box-sizin: border-box;
+  --bg-main-color: #252525;
+  --main-font-color: #FFF
+}
+
+body {
+  font-family: sans-serif;
+  color: var(--main-fon-colo);
+  background-color: var(--bg-main-color);
+}
