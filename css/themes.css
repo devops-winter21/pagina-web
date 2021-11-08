@@ -3,11 +3,11 @@
   paddin: 0;
   box-sizin: border-box;
   --bg-main-color: #252525;
-  --main-font-color: #FFF
+  --main-font-color: #FFF;
 }
 
 body {
   font-family: sans-serif;
-  color: var(--main-font-colo);
+  color: var(--main-font-color);
   background-color: var(--bg-main-color);
 }
