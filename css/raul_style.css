@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizin: border-box;
+  --bg-main-color: #252525;
+  --bg-secundary-color: #454545;
+  --line-color: #AAF;
+  --main-font-color: #DDD;
+  --red: #F00;
+  --orange: #F80;
+  --yellow: #FF0;
+  --green: #0F0;
+  --blue: #00F;
+  --purple: #80F;
+  --white: #FFF;
+  --black: #000;
+}
+
+body {
+  font-family: sans-serif;
+  color: var(--main-font-color);
+  background-color: var(--bg-main-color);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.container nav{
+  flex-basis: 450px;
+  heigh: calc(100vh - 70px);
+  border-right: 3px solid var(--line-color);
+  background-color: var(--bg-secundary-color);
+}
+
+.container nav ul{
+  list-style: none;
+  font-size:  15px;
+}
+
+.container nav ul li{
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.container nav ul .colors{
+  flex-wrap: wrap;
+  justify-contentspace-around;
+  border-top: 1px solid var(--line-color);
+  border-bottom: 1px solid var(--line-color);
+  text-align: cetner;
+  font-size: 12px;
+}
+
+.container nav ul .colors a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 0.7em;
+  margin: 5px;
+  transition: .15s;
+}
+
+.container nav ul .colors a:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.container nav ul .colors #redCnvBtn, #redTxtBtn{
+  background-color:  var(--red);
+}
+
+.container nav ul .colors #orangeCnvBtn, #orangeTxtBtn{
+  background-color:  var(--orange);
+}
+
+.container nav ul .colors #yellowCnvBtn, #yellowTxtBtn{
+  background-color:  var(--yellow);
+}
+
+.container nav ul .colors #greenCnvBtn, #greenTxtBtn{
+  background-color:  var(--green);
+}
+
+.container nav ul .colors #blueCnvBtn, #blueTxtBtn{
+  background-color:  var(--blue);
+}
+
+.container nav ul .colors #purpleCnvBtn, #purpleTxtBtn{
+  background-color:  var(--purple);
+}
+
+.container nav ul .colors #whiteCnvBtn, #whiteTxtBtn{
+  background-color:  var(--white);
+}
+
+.container nav ul .colors #blackCnvBtn, #blackTxtBtn{
+  background-color:  var(--black);
+}
+
+.container main{
+  display: flex;
+  flex-directoin: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--bg-secundary-color);
+}
